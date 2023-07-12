@@ -1,5 +1,5 @@
 ```sql
--- rodzaj = 3 oznacza łowiska, które są rzekami (z polecenia).
+-- `rodzaj = 3` oznacza łowiska, które są rzekami (z treści).
 SELECT nazwa, akwen, wojewodztwo FROM ryby INNER JOIN lowisko ON ryby.id = lowisko.Ryby_id WHERE rodzaj = 3;
 ```
 
