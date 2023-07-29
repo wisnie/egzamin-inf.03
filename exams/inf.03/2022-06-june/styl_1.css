@@ -1,0 +1,74 @@
+*, *::after, *::before {
+    /* Reset części domyślnych stylów przeglądarki. */
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: Helvetica, sans-serif;
+}
+
+footer, header {
+    background-color: #00838F;
+    color: white;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left-container {
+    width: 55%;
+}
+
+.left-block {
+    background-color: #EFEFEF;
+
+    /* Dodane ze względów stylistycznych. */
+    padding: 20px;
+}
+
+.left-block:first-child {
+    height: 150px;
+}
+
+.left-block:nth-child(2) {
+    height: 300px;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #4FB3BF;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+}
+
+img {
+    box-shadow: 10px 10px 5px dimgray;
+    margin: 20px;
+}
+
+table, td, th {
+    border: 1px solid #4FB3BF;
+    border-collapse: collapse;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+}
+
+th {
+    padding: 4px;
+}
+
+td:hover {
+    background: #4FB3BF;
+}
