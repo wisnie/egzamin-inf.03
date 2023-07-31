@@ -1,0 +1,7 @@
+SELECT imie, nazwisko, miasto FROM klient WHERE miasto in ('Legionowo', 'Warszawa');
+
+SELECT nazwa FROM produkty WHERE cena_brutto < 500;
+
+SELECT nazwa_kategorii, AVG(cena_brutto) FROM produkty NATURAL JOIN kategorie GROUP BY (nazwa_kategorii);
+
+SELECT id_zam, ilosc, wartosc, p.nazwa FROM zamowienia NATURAL JOIN produkty p WHERE id_klient = 2;
