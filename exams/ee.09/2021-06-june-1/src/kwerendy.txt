@@ -1,0 +1,7 @@
+SELECT imie, nazwisko, opis, zdjecie FROM osoby WHERE Hobby_id IN (1, 2, 6);
+
+SELECT o.id, o.nazwisko, h.nazwa FROM osoby o INNER JOIN hobby h ON h.id = Hobby_id WHERE rok_urodzenia > 2000;
+
+SELECT id, zdjecie FROM osoby WHERE imie = 'Monika' LIMIT 5;
+
+CREATE TABLE wpisy (id INT UNSIGNED AUTO_INCREMENT, wpis TEXT, uzytkownik_id INT UNSIGNED NOT NULL, PRIMARY KEY (id), FOREIGN KEY (uzytkownik_id) REFERENCES osoby (id));

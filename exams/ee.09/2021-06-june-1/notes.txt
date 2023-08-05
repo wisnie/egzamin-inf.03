@@ -1,0 +1,4 @@
+Iterowanie po $mysqli_result, zamykanie $mysli_result
+https://stackoverflow.com/questions/1351633/why-use-mysqli-close
+https://stackoverflow.com/questions/2617672/how-important-is-it-to-unset-variables-in-php/2617786#2617786
+https://stackoverflow.com/questions/2879500/mysqli-do-i-really-need-to-do-result-close-mysqli-close

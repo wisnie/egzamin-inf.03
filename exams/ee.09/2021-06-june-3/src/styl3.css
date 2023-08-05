@@ -1,0 +1,54 @@
+* {
+    font-family: Verdena, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #29434E;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    width: 70%;
+    height: 70px;
+}
+
+table {
+    width: 30%;
+    height: 70px;
+}
+
+section {
+    background-color: #B0BEC5;
+    height: 320px;
+    overflow: scroll;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer {
+    background-color: #29434E;
+    color: white;
+}
+
+article {
+    padding: 5px;
+    width: 226px;
+    height: 280px;
+}
+
+h3 {
+    background-color: #546E7A;
+    color: white;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+}

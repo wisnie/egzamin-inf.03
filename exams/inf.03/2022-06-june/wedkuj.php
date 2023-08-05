@@ -1,11 +1,14 @@
 <?php
 // Zmienne środowiskowe są normalnie wczytywane przez środowisko uruchomieniowe.
-// Przykład ma charakter edukacyjny, wczytuję je w tym miejscu.
+// Przykład ma charakter edukacyjny, dlatego wczytuję je w tym miejscu.
 putenv("host=localhost");
 putenv("dbname=wedkowanie");
 putenv("user=marek");
 putenv("pass=trzcinacukrowa");
 
+// Taka obsługa błędów praktycznie nic nam nie daje, w tym wypadku możemy
+// się upewnić, że błąd nastąpił w trakcie połączenia lub wykonywania zapytań.
+// W aplikacji produkcyjnej zapewne ponowilibyśmy próbę połączenia.
 try {
     // Instancja połączenia z bazą danych, po zakończeniu wykonywanych operacji
     // należy ustawić ją na null.

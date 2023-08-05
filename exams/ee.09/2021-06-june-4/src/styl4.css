@@ -1,0 +1,35 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+header, footer {
+    height: 20px;
+    background-color: #AF4448;
+    color: white;
+    text-align: center;
+}
+
+section {
+    height: 650px;
+    width: 50%;
+    background-color: #FFA4A2;
+}
+
+span {
+    display: block;
+}
+
+h4 {
+    margin: 0;
+}
+
+button {
+    padding: 5px;
+    margin: 10px;
+    background-color: #AF4448;
+    color: white;
+}

@@ -1,0 +1,3 @@
+Domyślne ustawienia bazy danych nie pozwalają na dodanie produktu z polską nazwą, ustawione jest kodowanie znaków latin, a także utf-8m3?
+
+Użycie wersji funkcyjnej mysqli dla każdego zapytania.

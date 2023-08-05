@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia, serif;
+}
+
+header {
+    height: 20px;
+    background-color: #005B4F;
+    color: white;
+    text-align: center;
+    font-size: 50%;
+}
+
+main {
+    height: 400px;
+    padding: 20px;
+    overflow: scroll;
+    background-color: #E1E2E1;
+}
+
+h2 {
+    background-color: #00897B;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+article > img {
+    width: 20%;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+footer {
+    display: flex;
+    height: 20px;
+    background-color: #005B4F;
+}
+
+footer > span, footer > a {
+    display: inline-block;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
