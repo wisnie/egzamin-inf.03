@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(244, 164, 96);
+    color: white;
+}
+
+p {
+    font-size: 150%;
+    border: 2px dotted rgb(169, 169, 169);
+}
+
+header {
+    display: flex;
+    height: 150px;
+}
+
+header > h2 {
+    width: 75%;
+    text-align: center;
+    font-size: 200%;
+}
+
+header > img {
+    width: 25%;
+}
+
+main {
+    background-color: rgb(128, 0, 0);
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(192, 192, 192);
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+}
+
+footer > *:nth-child(odd) {
+    width: 20%;
+    padding-top: 90px;
+}
+
+footer > *:nth-child(even) {
+    text-align: center;
+    width: 60%;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.bold {
+    font-weight: bold;
+}
