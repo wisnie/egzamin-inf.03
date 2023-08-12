@@ -1,0 +1,1 @@
+Sprawdzić, co jest widoczne po wyrzuceniu błędu w przypadku APACHE2.

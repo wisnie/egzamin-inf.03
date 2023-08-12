@@ -52,6 +52,7 @@ footer > *:nth-child(odd) {
 footer > *:nth-child(even) {
     text-align: center;
     width: 60%;
+    align-self: start;
 }
 
 p.italic {

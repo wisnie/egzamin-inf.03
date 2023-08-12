@@ -1,0 +1,56 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: seagreen;
+}
+
+header {
+    color: white;
+    text-align: center;
+    height: 330px;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}
+
+section {
+    display: flex;
+}
+
+.section-left {
+    width: 30%;
+    height: 150px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.section-right {
+    width: 70%;
+    height: 150px;
+    background-color: white;
+}
+
+main {
+    color: white;
+}
+
+main > .teams {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 170px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+article:hover {
+    background-color: white;
+    color: black;
+}
