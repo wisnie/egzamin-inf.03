@@ -9,3 +9,10 @@ https://www.php.net/manual/en/pdo.error-handling.php
 https://stackoverflow.com/questions/1053424/how-do-i-get-php-errors-to-display
 https://stackoverflow.com/questions/62012/apache-fall-back-when-php-fails
 https://stackoverflow.com/questions/9330558/how-can-i-log-fatal-errors-in-php
+
+*
+https://stackoverflow.com/questions/32421702/best-practice-for-error-handling-using-pdo
+https://phpdelusions.net/delusion/try-catch#clarification
+
+8.1.0 	The default value is now MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT. Previously, it was MYSQLI_REPORT_OFF.
+mysqli_report jest teraz niepotrzebne.
