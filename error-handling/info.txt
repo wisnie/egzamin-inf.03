@@ -1,0 +1,11 @@
+PHP domyślnie wyświetli błędy połączenia na ekran, co jest dobre podczas fazy budowania aplikacji,
+odpowiada za to zmienna uruchomieniowa display_errors, w przypadku LAMP nie jest ustawiona.
+
+Trzeba także sprawdzić wykonanie kwerendy SQL, porównać `getErrorMessage` do automatycznego wyrzucania błędów
+i poprawić przykłady.
+
+https://www.php.net/manual/en/pdo.connections.php
+https://www.php.net/manual/en/pdo.error-handling.php
+https://stackoverflow.com/questions/1053424/how-do-i-get-php-errors-to-display
+https://stackoverflow.com/questions/62012/apache-fall-back-when-php-fails
+https://stackoverflow.com/questions/9330558/how-can-i-log-fatal-errors-in-php
