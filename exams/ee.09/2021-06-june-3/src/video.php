@@ -8,11 +8,11 @@ if (isset($_POST['delete-movie-id'])) {
     $delete_movie_stmt->execute();
 }
 
-$get_featured_movies_query = "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE id IN (18, 22, 23, 25)";
-$featured_movies = $mysqli->query($get_featured_movies_query)->fetch_all(MYSQLI_ASSOC);
+$featured_movies_sql = "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE id IN (18, 22, 23, 25)";
+$featured_movies = $mysqli->query($featured_movies_sql)->fetch_all(MYSQLI_ASSOC);
 
-$get_fantasy_movies_query = "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE Rodzaje_id = 12";
-$fantasy_movies = $mysqli->query($get_fantasy_movies_query)->fetch_all(MYSQLI_ASSOC);
+$fantasy_movies_sql = "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE Rodzaje_id = 12";
+$fantasy_movies = $mysqli->query($fantasy_movies_sql)->fetch_all(MYSQLI_ASSOC);
 
 $mysqli->close();
 ?>
