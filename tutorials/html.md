@@ -102,9 +102,9 @@ zgodnym ze standardem/specyfikacją. Znacznik `<html>` definiuje początek stron
 
 Gdy mówimy, że w `<head>` znajdują się np. zewnętrzne style, to nie oznacza, że są
 one magicznie "wstrzyknięte" w dokument. Gdy **przeglądarka** pobrała plik HTML i w momencie
-jego przetwarzania natrafia na znacznik `<link href="..." rel="stylesheet">` wykonuje
-kolejne zapytanie do serwera, w celu pobrania tego pliku. Poniżej załączam dobry wpis o tym, jak
-działają przeglądarki.
+jego przetwarzania natrafia na znacznik `<link href="..." rel="stylesheet">`, wykonuje
+kolejne zapytanie do serwera, w celu pobrania tego pliku. Następnie style są przetwarzane oraz
+aplikowane do odpowiednich elementów strony.
 
 Przeglądarka ma bardzo wiele domyślnych stylów dla poszczególnych elementów. 
 Przykładowo elementy listy są domyślnie wcięte, zazwyczaj będąc poprzedzonym kropką
@@ -129,3 +129,4 @@ dlatego częstą praktyką jest ich nadpisywanie/resetowanie.
 - [Całościowy kurs HTML stworzony przed MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 - [Jak działają przeglądarki](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work)
 - [Materiał Computerphile o różnicach pomiędzy HTML, XML, SGML](https://youtu.be/RH0o-QjnwDg?si=4BLCqHecDXVblMdT)
+- [Artykuł o silniku CSS](https://hacks.mozilla.org/2017/08/inside-a-super-fast-css-engine-quantum-css-aka-stylo/)
