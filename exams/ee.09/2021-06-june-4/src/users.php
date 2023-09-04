@@ -16,7 +16,6 @@ endif;
 
 $mysqli->close();
 ?>
-
 <!doctype html>
 <html lang="pl">
 <head>

@@ -1,16 +1,15 @@
-# Przyśpieszony kurs HTML
+# Esencja języka HTML
 
-HTML (HyperText Markup Language) jest językiem znacznikowym, za jego
-pomocą definiujemy strukturę oraz semantykę stron
-internetowych. Mówiąc inaczej pozwala nam nadać treściom dodatkowy
-kontekst, metadane pomocne przy ich przetwarzaniu. Prosty przykład
-będzie pomocny. Spróbuj scharakteryzować poniższy tekst:
+HTML (HyperText Markup Language) jest językiem znaczników. Znaczniki służą do definiowania struktury 
+oraz semantyki stron internetowych. Mówiąc inaczej, za pomocą języka HTML możemy nadać przedstawionej treści
+dodatkowy kontekst do przetworzenia oraz różne metadane dokumentu. Poniżej przedstawiam przykładową
+zawartość strony:
 
 ```
 Trzcina cukrowa, produkcja i jej odkrycie.
 
-Trzcina cukrowa (Saccharum officinarum), z którego wytwarzana jest
-obecnie większość cukru (ok. 65% światowej produkcji). Najwięksi
+Trzcina cukrowa (Saccharum officinarum), roślina, z której wytwarza się
+obecnie większość światowej produkcji cukru (ok. 65%). Najwięksi
 producenci trzciny cukrowej to m.in. Brazylia, Indie, Chiny, Tajlandia
 i Pakistan.
 
@@ -27,28 +26,23 @@ rośliny.
 
 ![Pole trzciny cukrowej w Wietnamie](sugar-cane.jpg)
 
-_Zdjęcie wykonane przez <a
-href="https://unsplash.com/fr/@hongochai10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Velik
-Ho</a>, dostępne na <a
-href="https://unsplash.com/photos/UgUeJnWlV_w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>_
+_Zdjęcie wykonane przez <a href="https://unsplash.com/fr/@hongochai10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Velik
+Ho</a>, dostępne na <a href="https://unsplash.com/photos/UgUeJnWlV_w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>_
 
-Możemy się domyśleć, że powyższy tekst jest pewnego rodzaju artykułem
-(stworzonym na potrzeby tego kursu). Gdybyśmy chcieli podzielić to
-opracowanie na nagłówek, streszczenie, cytat z innej publikacji, to
-prawdopodobnie musielibyśmy zrobić to ręcznie, tzn. napisanie skryptu,
-który robił by to automatycznie byłoby trudne bez żadnej ustalonej
-struktury. Zobaczmy jak wygląda dokument o tej samej treści wraz ze
-znacznikami języka HTML:
+Powyższy tekst jest artykułem, który stworzyłem na potrzeby tego wpisu. Potrafimy (jako ludzie) logicznie
+podzielić zawartość tekstu na poszczególne składowe: nagłówek, definicja, cytat z publikacji, zdjęcie.
+Zrobienie tego w sposób zautomatyzowany, czy odpowiednie wyświetlenie treści przez przeglądarkę nie jest
+już takie trywialne bez uprzedniej struktury. Przy pomocy języka HTML, możemy tę strukturę zdefiniować:
 
 ```html
 <article lang="pl">
   <h2>Trzcina cukrowa, produkcja i jej odkrycie.</h2>
 
   <p>
-    Trzcina cukrowa <i lang="la">(Saccharum officinarum)</i>, z
-    którego wytwarzana jest obecnie większość cukru (ok. 65% światowej
-    produkcji). Najwięksi producenci trzciny cukrowej to
-    m.in. Brazylia, Indie, Chiny, Tajlandia i Pakistan.
+    Trzcina cukrowa <i lang="la">(Saccharum officinarum)</i>, roślina, z której wytwarza się
+      obecnie większość światowej produkcji cukru (ok. 65%). Najwięksi
+      producenci trzciny cukrowej to m.in. Brazylia, Indie, Chiny, Tajlandia
+      i Pakistan.
   </p>
   
   <p>
@@ -70,15 +64,19 @@ znacznikami języka HTML:
 </article>
 ```
 
-Znaczniki HTML w powyższym tekście dostarczają nam (lub np. silnikom
-wyszukiwania) dodatkowe informacje o tekście. W tym wypadku możemy się
-dowiedzieć, że dokument jest artykułem w języku polskim, który składa się
-z nagłówka, dwóch paragrafów, cytatu oraz zdjęcia. Dodatkowo wiemy, że
-w tekście znajduje się termin z języka łacińskiego, mamy dostęp do
-strony Wikipedii o instytucie oraz możemy bezpośrednio odnieść się do
-całości cytowanej pracy (atrybut `cite`). HTML opisuje także
-strukturę, fachowa nazwa rośliny znajduje się w pierwszym paragrafie,
-również sam on (znacznik `p`) jest częścią całego artykułu.
+Znaczniki dostarczają dodatkowych informacji:
+
+1. Przedstawiona treść jest artykułem, czyli zagłębiając się w definicję tego znacznika, stanowi odrębną całość.
+2. Artykuł jest napisany w języku polskim (atrybut `lang`).
+3. Artykuł składa się z nagłówka, dwóch paragrafów, cytatu oraz zdjęcia.
+4. W artykule pojawia się termin z języka łacińskiego.
+5. Mamy dostęp do odnośnika na Wikipedii do cytowanego podmiotu.
+6. Załączone zdjęcie dostępne jest za pomocą adresu dostępu.
+7. Zdjęcie zawiera zdefiniowany tekst alternatywny.
+
+Te i inne informacje wykorzystywane są przez przeglądarki podczas przetwarzania treści strony,
+a także inne programy operujące na dokumentach HTML. Zastosowanie odpowiedniej do treści struktury
+zapewnia lepsze indeksowanie w wynikach wyszukiwania.
 
 ## Elementy strony internetowej HTML
 
@@ -98,29 +96,36 @@ Podstawowa struktura dokumenta wygląda następująco:
 </html>
 ```
 
-Preambuła `<!DOCTYPE html>` jest potrzebna, aby przeglądarka
-internetowa pracowała w trybie zgodnym ze specyfikacją, znacznik
-`html` jest znacznikiem, który "definiuje" stronę, jej rozpoczęcie. W
-zagnieżdżonym znaczniku `head` znajdują się skrypty, zewnętrzne style,
-a w `body` cała treść, która zostanie wyświetlona użytwkonikowi.
+Preambuła `<!DOCTYPE html>` jest wymagana, aby przeglądarka internetowa pracowała w trybie
+zgodnym ze standardem/specyfikacją. Znacznik `<html>` definiuje początek strony. W zagnieżdżonym znaczniku 
+`<head>` znajdują się m.in. skrypty, zewnętrzne style, a w `<body>` wcześniej wspomniana treść.
 
-Na tym etapie warto zdefiniować, co w praktyce oznacza, że w `head`
-znajdują się skrypty lub `body` stanowi treść strony. HTML jest
-językiem, formą zapisu opartą na specyfikacji, to **przeglądarka**
-internetowa (Firefox, Safari, Chrome) jest napisana w taki sposób, aby
-z tego dokumentu wygenerować nam stronę. Gdy dodajemy style CSS za
-pomocą znacznika `link`, **przeglądarka** po pobraniu tego dokumentu wyśle
-żądanie na określony adres URL, pobierze, przetworzy i wczyta
-zdefiniowane style.
+Gdy mówimy, że w `<head>` znajdują się np. zewnętrzne style, to nie oznacza, że są
+one magicznie "wstrzyknięte" w dokument. Gdy **przeglądarka** pobrała plik HTML i w momencie
+jego przetwarzania natrafia na znacznik `<link href="..." rel="stylesheet">` wykonuje
+kolejne zapytanie do serwera, w celu pobrania tego pliku. Poniżej załączam dobry wpis o tym, jak
+działają przeglądarki.
 
-Przeglądarka, to potężne narzędzie, ma domyślne style dla wielu
-znaczników, np. `input` wyświetli pole tekstowe, element listy jest
-domyślnie wcięty i jest poprzedzony kropką. Te style często różnią się
-pomiędzy przeglądarkami, dlatego stosowane są takie praktyki jak
-napisywanie stylów domyślnych.
+Przeglądarka ma bardzo wiele domyślnych stylów dla poszczególnych elementów. 
+Przykładowo elementy listy są domyślnie wcięte, zazwyczaj będąc poprzedzonym kropką
+lub liczbą. Zdarza się, że domyślne style są różne dla poszczególnych przeglądarek,
+dlatego częstą praktyką jest ich nadpisywanie/resetowanie.
 
-> Dlaczego przeglądarka wyświetla źle sformatowane strony?  >
-Przeglądarka jest stworzona z myślą o użytkownikach, dlatego nie jest
-wymagana pełna poprawność. Jest to na wzór filozofii: lepiej zobaczyć
-lekko uszkodzoną strukturę strony niż komunikat błędu, że jakiś
-znacznik nie został zamknięty.
+> **Dlaczego przeglądarka wyświetli także źle sformatowane strony?**
+> 
+> Podczas tworzenia dokumentów HTML, możemy zauważyć, że przeglądarka
+> wygeneruje także strony, których struktura nie jest w pełni zgodna ze specyfikacją — np. zazwyczaj 
+> możliwe jest pominięcie znacznika `<html>`, czy `<body>`.
+> 
+> Przeglądarka jest stworzona przede wszystkim z myślą o użytkownikach. Wyświetlenie
+> jakiejś treści (nawet uszkodzonej) jest lepsze niż pokazanie komunikatu o błędzie.
+> Kiedyś miało to jeszcze większe znaczenie, ponieważ programy do sprawdzania poprawności
+> kodu źródłowego były mniej dostępne, a te przeglądarki, które nie radziły sobie
+> z wyświetlaniem niepoprawnie sformatowanego HTML-a były na straconej pozycji względem
+> konsumenta.
+
+## Bibliografia
+
+- [Całościowy kurs HTML stworzony przed MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+- [Jak działają przeglądarki](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work)
+- [Materiał Computerphile o różnicach pomiędzy HTML, XML, SGML](https://youtu.be/RH0o-QjnwDg?si=4BLCqHecDXVblMdT)

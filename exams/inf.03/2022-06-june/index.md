@@ -1,7 +1,15 @@
 # INF.03 2022-06 (czerwiec)
 
-W arkuszu należy rozpakować archiwum z danymi, utworzyć bazę danych
-oraz zaimportować plik z rozszerzeniem `sql`. Następnie jesteśmy
-proszeni o stworzenie 4 kwerend, wykonanie prostej struktury strony
-internetowej, która ma wyświetlać dane pobrane z BD przy pomocy
-wcześniej zdefiniowanych zapytań.
+Arkusz wymaga od nas wykonania dwóch zapytań do bazy danych. Wyniki z pierwszego wyświetlamy w
+formie listy uporządkowanej, natomiast tego drugiego w formie tabeli. Trudnością podczas rozwiązywania tego
+arkuszu może okazać się znajomość atrybutu `download`, znajdującego się na elemencie `<a>`.
+
+- [:film_strip: Podgląd strony](preview/preview.html)
+- [:file_folder: Pliki źródłowe]()
+
+## Kwerendy i zwracane wyniki
+
+- [Kwerenda 1](1-query.md)
+- [Kwerenda 2](2-query.md)
+- [Kwerenda 3](3-query.md)
+- [Kwerenda 4](4-query.md)

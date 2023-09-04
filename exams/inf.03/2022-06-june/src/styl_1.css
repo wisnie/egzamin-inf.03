@@ -1,8 +1,5 @@
-*, *::after, *::before {
-    /* Reset części domyślnych stylów przeglądarki. */
+* {
     box-sizing: border-box;
-    margin: 0;
-
     font-family: Helvetica, sans-serif;
 }
 
@@ -17,29 +14,28 @@ footer, header {
 main {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }
 
 
-.left-container {
+.fish-section {
     width: 55%;
-}
-
-.left-block {
     background-color: #EFEFEF;
-
-    /* Dodane ze względów stylistycznych. */
-    padding: 20px;
 }
 
-.left-block:first-child {
+.river-fish-article {
+    display: flex;
+    flex-direction: column;
     height: 150px;
 }
 
-.left-block:nth-child(2) {
+.predatory-fish-article {
+    display: flex;
+    flex-direction: column;
     height: 300px;
 }
 
-.right-block {
+.queries-section {
     display: flex;
     flex-direction: column;
     align-items: center;
