@@ -1,0 +1,58 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+header,
+footer {
+    height: 80px;
+    background-color: #4BA3C7;
+    color: white;
+    font-size: 120%;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.main-prices,
+.main-contact {
+    width: 25%;
+    height: 400px;
+    background-color: #EFEFEF;
+}
+
+.main-cost {
+    width: 50%;
+    height: 400px;
+    background-color: #90CAF9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 90%;
+    margin-left: 10px;
+    border: 1px solid #90CAF9;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #90CAF9;
+}
+
+tr:hover {
+    color: #90CAF9;
+}
+
+input {
+    margin: 15px 0;
+}

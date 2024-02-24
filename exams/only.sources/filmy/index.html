@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl1.css">
+    <title>Filmy</title>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <h3>Dostępne gatunki filmu</h3>
+            <ol>
+                <li>Sci-Fi</li>
+                <li>animacja</li>
+                <li>dramat</li>
+                <li>horror</li>
+                <li>komedia</li>
+            </ol>
+            <p><a download="" href="kadr.jpg">Pobierz obraz</a></p>
+            <p><a target="_blank" href="http://repertuar-kin.pl">Sprawdź repertuar kin</a></p>
+        </aside>
+        <section>
+            <header>
+                <h1>FILMOTEKA</h1>
+            </header>
+            <div class="movie-form">
+                <form action="dodaj.php" method="post">
+                    <label>
+                        Tytuł:
+                        <input type="text" name="title" id="title">
+                    </label>
+                    <label>
+                        Gatunek filmu:
+                        <input type="number" name="genre" id="genre">
+                    </label>
+                    <label>
+                        Rok produkcji:
+                        <input type="number" name="production-year" id="production-year">
+                    </label>
+                    <label>
+                        Ocena:
+                        <input type="number" name="rating" id="rating">
+                    </label>
+                    <div class="form-buttons">
+                        <button type="reset">CZYŚĆ</button>
+                        <button type="submit">DODAJ</button>
+                    </div>
+                </form>
+            </div>
+            <div class="main-cover">
+                <img src="kadr.jpg" alt="zdjęcie filmowe">
+            </div>
+        </section>
+    </main>
+    <footer>
+        Autor strony: 00000000000
+    </footer>
+</body>
+
+</html>

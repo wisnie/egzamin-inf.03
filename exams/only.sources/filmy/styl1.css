@@ -1,0 +1,71 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+h1, form {
+    margin-top: 0 !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 75%;
+}
+
+main,
+.form-buttons {
+    display: flex;
+}
+
+main aside {
+    height: 700px;
+    width: 25%;
+    background-color: navy;
+    color: white;
+}
+
+section header {
+    height: 100px;
+    width: 100%;
+    background-color: royalblue;
+    text-align: center;
+}
+
+section .movie-form {
+    height: 300px;
+    width: 100%;
+    background-color: steelblue;
+}
+
+section .main-cover {
+    height: 300px;
+    width: 100%;
+    background-color: royalblue;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: steelblue;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+form {
+    margin: 30px;
+    line-height: 3;
+}
+
+form:hover {
+    background-color: deepskyblue;
+}

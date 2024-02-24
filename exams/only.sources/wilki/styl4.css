@@ -1,0 +1,49 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+header {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    background-color: lightseagreen;
+    text-align: center;
+    padding: 60px;
+}
+
+main {
+    display: flex;
+}
+
+.main-list,
+.main-animals {
+    height: 350px;
+    width: 25%;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+.main-photo {
+    height: 350px;
+    width: 50%;
+    background-color: teal;
+}
+
+footer {
+    background-color: darkcyan;
+    color: white;
+    padding: 40px;
+}
+
+ul {
+    border: 4px dotted rgb(127, 255, 212);
+}
